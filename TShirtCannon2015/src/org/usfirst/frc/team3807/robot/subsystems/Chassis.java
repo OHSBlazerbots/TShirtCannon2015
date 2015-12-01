@@ -28,7 +28,7 @@ public class Chassis extends Subsystem {
      * @param rearRightMotor
      */
     public Chassis(int leftMotor, int rightMotor) {
-        //Create new robot drive class with pin values for the two motors
+        //Create new robot drive class with pin values for the two motors (west coast chassis)
         if (leftMotor != -1 && rightMotor != -1) {
             drive = new RobotDrive(leftMotor, rightMotor);
             //Disables safety so we can drive
@@ -69,6 +69,7 @@ public class Chassis extends Subsystem {
         }
     }
 
+    //drives chassis w/ specific move [0,1] and turn [0,1]? values
     public void drive(double move, double turn) {
     	//System.out.println(move + " : " + turn);
         drive.arcadeDrive(move * .5, turn * .35);

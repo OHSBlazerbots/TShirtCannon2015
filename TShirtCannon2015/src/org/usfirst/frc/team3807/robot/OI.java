@@ -1,13 +1,7 @@
 package org.usfirst.frc.team3807.robot;
 
-import org.usfirst.frc.team3807.robot.commands.DriveElevatorWithJoystick;
-import org.usfirst.frc.team3807.robot.commands.GoToAnalogPoint;
-import org.usfirst.frc.team3807.robot.commands.GoToPosition;
 import org.usfirst.frc.team3807.robot.commands.PrintSensorValue;
-import org.usfirst.frc.team3807.robot.commands.ReverseIntake;
-import org.usfirst.frc.team3807.robot.commands.RumbleMaker;
-import org.usfirst.frc.team3807.robot.commands.StartIntake;
-import org.usfirst.frc.team3807.robot.commands.ToggleIntakeForward;
+
 
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
@@ -44,15 +38,6 @@ public class OI {
     	reverseIntake = new JoystickButton(joystick, 2);
     	goToAnalog = new JoystickButton(joystick2, 9);
     	
-    	intake1.toggleWhenPressed(new ToggleIntakeForward());
-    	setPos0.whenPressed(new GoToPosition(0));
-    	setPos1.whenPressed(new GoToPosition(1));
-    	//setPos2.whenPressed(new GoToPosition(2));
-    	setPos4.whenPressed(new GoToPosition(3));
-    	//coDriverOverride.whileHeld(new DriveElevatorWithJoystick());
-    	intake.whileHeld(new StartIntake());
-    	reverseIntake.whileHeld(new ReverseIntake());
-    	//goToAnalog.whileHeld(new GoToAnalogPoint());
     }
 
     //Returns the joystick that controls driving

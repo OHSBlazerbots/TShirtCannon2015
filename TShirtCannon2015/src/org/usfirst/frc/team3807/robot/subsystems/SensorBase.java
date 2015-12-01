@@ -1,6 +1,5 @@
 package org.usfirst.frc.team3807.robot.subsystems;
 
-import org.usfirst.frc.team3807.robot.commands.FindElevator;
 import org.usfirst.frc.team3807.robot.commands.SendSensorValues;
 
 import edu.wpi.first.wpilibj.AnalogInput;
@@ -56,7 +55,7 @@ public class SensorBase extends Subsystem {
 	}
 
     public void initDefaultCommand() {
-        setDefaultCommand(new FindElevator());
+        //setDefaultCommand(new FindElevator());
     }
     
     public boolean getLimitTote() {
