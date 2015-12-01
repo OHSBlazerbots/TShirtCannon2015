@@ -42,4 +42,12 @@ public class RobotMap {
     public static int ULTRA_SONIC_PORT1 = 2;
     public static int ULTRA_SONIC_PORT2 = 3;
     
+    //relay
+    //from big tank to secondary tanks
+    public static int SOLENOID1 = -1;
+    
+    //from secondary tank to barrel (should be fired simultaneously)
+    public static int SOLENOID2 = -1;
+    public static int SOLENOID3 = -1;
+    
 }
