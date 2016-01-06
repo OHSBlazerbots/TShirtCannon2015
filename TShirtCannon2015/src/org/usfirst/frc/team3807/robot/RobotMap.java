@@ -44,10 +44,10 @@ public class RobotMap {
     
     //relay
     //from big tank to secondary tanks
-    public static int SOLENOID1 = -1;
+    public static int SPIKE1 = -1;
     
     //from secondary tank to barrel (should be fired simultaneously)
-    public static int SOLENOID2 = -1;
-    public static int SOLENOID3 = -1;
+    public static int SPIKE2 = -1;
+    public static int SPIKE3 = -1;
     
 }

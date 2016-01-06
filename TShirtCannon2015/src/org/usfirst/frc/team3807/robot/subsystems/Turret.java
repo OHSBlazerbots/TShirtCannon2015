@@ -2,17 +2,17 @@ package org.usfirst.frc.team3807.robot.subsystems;
 
 import org.usfirst.frc.team3807.robot.commands.DriveTurretWithJoystick;
 
+import edu.wpi.first.wpilibj.Jaguar;
 import edu.wpi.first.wpilibj.Joystick;
-import edu.wpi.first.wpilibj.Victor;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 public class Turret extends Subsystem {
 
 	//turret system uses one jaguar
-	Victor jag;
+	Jaguar jag;
 	
 	public Turret(int jag1){
-		jag = new Victor (jag1);
+		jag = new Jaguar(jag1);
 	}
 	
 	//sets turret speed to a given speed
