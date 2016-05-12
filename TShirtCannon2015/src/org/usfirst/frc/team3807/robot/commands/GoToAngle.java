@@ -35,12 +35,12 @@ public class GoToAngle extends CommandBase {
 		double error = 5;
 
 		// How much we need to turn
-		double turn = sensorBase.getGyroAngle() - angle;
+		//double turn = sensorBase.getGyroAngle() - angle;
 
 		// Get it into the range of 0-360
-		if (turn < 0) {
+		/*if (turn < 0) {
 			turn += 360;
-		}
+		}*/
 		// One boundry
 		double bound1 = angle - error;
 		// Get it into the range of 0-360
@@ -57,7 +57,7 @@ public class GoToAngle extends CommandBase {
 		double tv = 0.0;
 
 		// If bound2 is the upper bound
-		if (bound1 < bound2) {
+		/*if (bound1 < bound2) {
 			// If we are between both bounds, stop
 			if (sensorBase.getGyroAngle() < bound2
 					&& sensorBase.getGyroAngle() > bound1) {
@@ -86,7 +86,7 @@ public class GoToAngle extends CommandBase {
 					tv = -.7;
 				}
 			}
-		}
+		}*/
 		// Drive at appropriate values
 		chassis.drive(tv, 0);
 	}

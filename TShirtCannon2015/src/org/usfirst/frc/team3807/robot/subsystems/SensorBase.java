@@ -6,7 +6,7 @@ import edu.wpi.first.wpilibj.AnalogInput;
 import edu.wpi.first.wpilibj.BuiltInAccelerometer;
 import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.Encoder;
-import edu.wpi.first.wpilibj.Gyro;
+//import edu.wpi.first.wpilibj.Gyro;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 /**
@@ -29,7 +29,7 @@ public class SensorBase extends Subsystem {
 	Encoder linearEncoder, rotaryEncoder;
 	//detect length or position using magnetic strips
 	
-	Gyro gyro;
+	//Gyro gyro;
 	//determines angle
     
 	
@@ -51,7 +51,7 @@ public class SensorBase extends Subsystem {
 		
 		toteTriggerSonic = new AnalogInput(ultraSonicPort);
 		toteDistanceSonic = new AnalogInput(toteDistanceSonicPort);
-		gyro = new Gyro(gyroPort);
+		//gyro = new Gyro(gyroPort);
 	}
 
     public void initDefaultCommand() {
@@ -124,7 +124,7 @@ public class SensorBase extends Subsystem {
       return reed2.get();
     }
     
-    public double getAngle(){
+    /*public double getAngle(){
     	return gyro.getAngle();
     }
     
@@ -139,6 +139,6 @@ public class SensorBase extends Subsystem {
     
     public double getGryoRate(){
     	return gyro.getRate();
-    }
+    }*/
 }
 
